@@ -1,0 +1,34 @@
+{
+  "env": {
+    "browser": true,
+    "node": true,
+    "jest": true
+  },
+  "parser": "babel-eslint",
+  "extends": ["airbnb", "prettier"],
+  "plugins": ["prettier"],
+  "rules": {
+    "no-use-before-define": [
+      "error",
+      { "functions": true, "classes": true, "variables": false }
+    ],
+    "prettier/prettier": ["error"],
+    "no-underscore-dangle": [
+      1,
+      {
+        "allow": ["_id"]
+      }
+    ],
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [".js", ".jsx"]
+      }
+    ]
+  },
+  "settings": {
+    "import/resolver": {
+      "babel-module": {}
+    }
+  }
+}
